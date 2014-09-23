@@ -1,0 +1,325 @@
+@font-face {
+	font-family: script_Font;
+	src: url(../fonts/script.ttf) format("truetype"), url(../fonts/script.eot)
+}
+body {
+	background: #dedede
+}
+.wrapper {
+	width: 1280px;
+	margin: 0 auto
+}
+.wrapper header, .wrapper section.mainContent nav, .wrapper section.mainContent article#saveRecent {
+	background: -webkit-linear-gradient(top, #fafbf9 12%, #dedfdd 47%);
+	background: -moz-linear-gradient(top, #fafbf9 12%, #dedfdd 47%);
+	background: -o-linear-gradient(top, #fafbf9 12%, #dedfdd 47%);
+	background: -ms-linear-gradient(top, #fafbf9 12%, #dedfdd 47%);
+	background: linear-gradient(to bottom, #fafbf9 12%, #dedfdd 47%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafbf9', endColorstr='#dedfdd', GradientType=0 )
+}
+.wrapper header, .wrapper section.mainContent nav, .wrapper section.mainContent article#newsFeed, .wrapper section.mainContent article#saveRecent, #modal_window, iframe {
+	-webkit-box-shadow: 0px 0px 10px 1px #afafb0;
+	-moz-box-shadow: 0px 0px 10px 1px #afafb0;
+	-o-box-shadow: 0px 0px 10px 1px #afafb0;
+	-ms-box-shadow: 0px 0px 10px 1px #afafb0;
+	box-shadow: 0px 0px 10px 1px #afafb0
+}
+.wrapper header {
+	width: 1280px;
+	position: fixed;
+	border: 1px solid #afafb0;
+	border-top: none;
+	-ms-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+	z-index: 1
+}
+.wrapper header h1 {
+	font-family: script_Font;
+	font-size: 2.5em;
+	font-weight: bold;
+	float: left;
+	margin: 10px 10px;
+	color: #484747
+}
+.wrapper header section {
+	float: right;
+	margin: 15px 10px
+}
+.wrapper header section a, #modal_window a {
+	font-size: 1em;
+	text-decoration: none;
+	color: #868788;
+	display: inline-block;
+	width: 55px;
+	padding: 6px;
+	text-align: center;
+	margin: 2px 5px;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 3px;
+	background: #fff
+}
+.wrapper section.mainContent {
+	width: 1280px;
+	position: absolute;
+	margin: 80px 0px 0px 0px
+}
+.wrapper section.mainContent article, .wrapper section.mainContent nav {
+	width: 228px;
+	float: left;
+	margin: 5px;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	background: #fff;
+	border-radius: 3px
+}
+.wrapper section.mainContent nav {
+	display: none;
+	margin: 0px 5px;
+	position: fixed
+}
+.wrapper section.mainContent nav ul {
+	background: #e9eaed;
+	border-radius: 3px;
+	border: 2px 2px 2px 0 solid black;
+	padding: 1px
+}
+.wrapper section.mainContent input[type="text"] {
+	outline: none;
+	width: 86%;
+	border: none;
+	padding: 10px 25px 10px 0;
+	background: url(../images/search.png) no-repeat right 5px
+}
+.wrapper section.mainContent nav ul li:first-child {
+	border-radius: 0px;
+	padding: 0 6px
+}
+.wrapper section.mainContent nav ul li:last-child {
+	background: url(../images/setting2.png) no-repeat 5px 6px, white;
+	padding: 10px 40px
+}
+.wrapper section.mainContent nav ul li:last-child:hover {
+	background: url(../images/setting2.png) no-repeat 5px 6px, white;
+	color: #868788
+}
+.wrapper section.mainContent nav ul li:first-child:hover {
+	background: white
+}
+.wrapper section.mainContent nav ul li {
+	font-size: 1.2em;
+	padding: 10px 6px;
+	cursor: pointer;
+	margin: 7px 2px;
+	background: #fff;
+	color: #868788;
+	border-radius: 2px;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	text-transform: capitalize
+}
+.wrapper section.mainContent nav ul li:hover {
+	background: rgba(106, 107, 109, 0.81);
+	color: white
+}
+.wrapper section.mainContent article#newsFeed {
+	width: 750px;
+	margin: 0 10px 0 255px;
+	background: #e9eaed;
+	height: 545px;
+	overflow-y: scroll;
+	
+}
+.wrapper section.mainContent article#saveRecent {
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	right: 43px;
+	height: 435px;
+	background: white;
+	overflow-y: scroll;
+	width: 250px;
+	display: none;
+}
+.wrapper section.mainContent article#saveRecent section.control {
+	background: #fff;
+	border-bottom: 1px solid #d0d1d5
+}
+.wrapper section.mainContent article#saveRecent section.control a {
+	font-size: 1em;
+	text-decoration: none;
+	color: #868788;
+	display: inline-block;
+	width: 100px;
+	padding: 6px;
+	text-align: center
+}
+.wrapper section.mainContent article#saveRecent section.control a:first-child {
+	background: url(../images/save.png) no-repeat 5px 4px
+}
+.wrapper section.mainContent article#saveRecent section.control a:last-child {
+	background: url(../images/recent.png) no-repeat 5px 3px
+}
+.wrapper section.mainContent article#newsFeed section {
+	padding: 5px;
+	margin: 10px auto;
+	width: 715px;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 3px;
+	background: #fff
+}
+.wrapper section.mainContent article#newsFeed  img {
+	width: 98%;
+	height: 100%;
+	margin: 0 1%;
+}
+.wrapper section.mainContent article#newsFeed section p, .wrapper section.mainContent article#newsFeed section p a {
+	text-align: justify;
+	text-decoration: none;
+	color: #484747
+}
+.wrapper section.mainContent article#newsFeed section p {
+	line-height: 20px
+}
+.wrapper section.mainContent article#newsFeed section h1, .wrapper section.mainContent article#saveRecent h1 {
+	position: relative;
+	font-weight: bold;
+	background: #dedede;
+	padding: 10px 5px;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 3px;
+	color: #484747;
+	margin: 5px 3px
+}
+.wrapper section.mainContent article#newsFeed section h2, .wrapper section.mainContent article#saveRecent h2 {
+	font-size: .7em;
+	color: #666666;
+	padding: 5px 0
+}
+.wrapper section.mainContent article#saveRecent h1 a.closeHeading {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background: url(../images/topicRemove.png) no-repeat right;
+}
+.wrapper section.mainContent article#newsFeed div {
+	background: #dedede
+}
+.wrapper section.mainContent article#newsFeed a.fbShare, .wrapper section.mainContent article#newsFeed a.save, .wrapper section.mainContent article#newsFeed a.twitter {
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	padding: 5px
+}
+.wrapper section.mainContent article#newsFeed a.read_More, .wrapper section.mainContent article#saveRecent h1 a.read_More {
+	text-decoration: none;
+	display: block;
+	color: #484747;
+	padding: 4px;
+	font-weight: bold
+}
+.wrapper section.mainContent article#newsFeed a.fbShare {
+	background: url(../images/fb.png) no-repeat center 5px
+}
+.wrapper section.mainContent article#newsFeed a.save {
+	background: url(../images/save.png) no-repeat center 5px
+}
+.wrapper section.mainContent article#newsFeed a.twitter {
+	background: url(../images/twitter.png) no-repeat center 5px
+}
+#mask {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: black
+}
+.modal_window {
+	position: absolute;
+	display: none;
+	color: white
+}
+#modal_window {
+	padding: 5px;
+	color: black;
+	width: 350px;
+	border-radius: 3px;
+	background: #dedede
+}
+#modal_window h1 {
+	font-size: 2em;
+	color: #484747;
+	margin: 10px 2px 20px 2px
+}
+#modal_window datalist {
+	height: 400px;
+	overflow-y: scroll;
+}
+#modal_window label, #modal_window input, #modal_window a {
+	display: block;
+	margin: 10px 10px 10px 20px
+}
+#modal_window section {
+	margin: 0 auto
+}
+#modal_window section a {
+	display: inline-block;
+	margin: 0 45px
+}
+#modal_window label#or {
+	text-align: center;
+}
+#modal_window label {
+	color: #484747
+}
+#modal_window input {
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	width: 300px
+}
+#modal_window span {
+	position: relative;
+	display: inline-block;
+	padding: 5px 20px 5px 5px;
+	//border-radius: 10px;
+	text-transform: capitalize;
+	color: white;
+	margin: 2px 0 10px 15px
+}
+#modal_window span a.topicRemove {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	background: url(../images/topicRemove.png) no-repeat right;
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 0px !important
+}
+iframe {
+	position: absolute;
+	background: white;
+	left: 20px;
+	top: 80px
+}
+#closeFrame {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url(../images/closeFrame.png) no-repeat 0 0;
+	right: 20px;
+	top: 65px;
+	display: none;
+	z-index: 5
+}

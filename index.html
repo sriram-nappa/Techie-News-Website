@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+		<title>GeeksBook</title>
+		<link rel="icon" href="images/favicon.png" type="image/png"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="index.html"> <h1>geeksbook</h1>
+				</a>Beta
+			</header>
+			<section class="mainContent">
+				<nav id="nav">
+					<ul>
+						<li id="search"> <input type="text" placeholder="Search"/></li>
+						<li id="setting" class="navLi activate_modal" name='modal_window' >manage topics</li>
+					</ul>
+				</nav>
+				<article class="default-skin" id="newsFeed">
+				
+				</article>
+				<article class="default-skin" id="saveRecent">
+				<section class="control"><a href="javascript:void(0)">Saved</a>
+					
+				</section>
+				</article>
+			</section>
+		</div>
+		<div id='mask' class='close_modal'></div>
+		<div id='modal_window' class='modal_window'>
+			<h1>Add Topic</h1>
+			<label>  Select from the List</label>
+			<input id="predef" list="predefinedURL" value="Select the Topic" onclick="this.value=''"/>
+			<datalist id="predefinedURL">
+			
+			</datalist>
+			<label id="or">OR</label>
+			<label>URL:</label>
+			<input type="text" id="url" >
+			<label>Name:</label>
+			<input type="text" id="name" >
+			<section class="buttonControls">
+				<a id="addURL" href="javascript:void(0)">Add</a>
+				<a id="close" href="javascript:void(0)">Close</a>
+			</section>
+		</div>
+		<a href="javascript:void(0)" id="closeFrame"></a>
+		<script type="text/javascript" src="lib/jquery-1.11.0.min.js"></script>
+		
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
